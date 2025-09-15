@@ -1,0 +1,33 @@
+--- Task 1: Creating 3 child processes ---
+Child PID: 12345, Parent PID: 12344 - Hello from child!
+Child PID: 12346, Parent PID: 12344 - Hello from child!
+Child PID: 12347, Parent PID: 12344 - Hello from child!
+Task 1 complete: All child processes finished.
+
+--- Task 2: Command Execution by child processes ---
+Child PID 12348 executing command: ls -1
+file1.py
+file2.txt
+output.txt
+process_management.py
+...
+Child PID 12349 executing command: date
+Mon Sep 15 20:30:00 IST 2025
+Child PID 12350 executing command: ps -ef
+UID        PID  PPID  C STIME TTY          TIME CMD
+user     12344 12340  0 20:22 pts/0    00:00:00 bash
+user     12348 12344  0 20:22 pts/0    00:00:00 ls -1
+user     12349 12344  0 20:22 pts/0    00:00:00 date
+user     12350 12344  0 20:22 pts/0    00:00:00 ps -ef
+...
+
+Task 2 complete: All commands executed.
+
+--- Task 5: Process Prioritization using nice values ---
+Child PID 12351 started with nice value 0
+PID 12351 finished counting.
+Child PID 12352 started with nice value 5
+PID 12352 finished counting.
+Child PID 12353 started with nice value 10
+PID 12353 finished counting.
+Task 5 complete: All prioritized processes finished.
