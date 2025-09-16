@@ -21,8 +21,6 @@ user     12349 12344  0 20:22 pts/0    00:00:00 date
 user     12350 12344  0 20:22 pts/0    00:00:00 ps -ef
 ...
 
-Task 2 complete: All commands executed.
-
 --- Task 5: Process Prioritization using nice values ---
 Child PID 12351 started with nice value 0
 PID 12351 finished counting.
